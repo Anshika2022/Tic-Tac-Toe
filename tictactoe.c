@@ -2,13 +2,13 @@
 #include <conio.h>
 #include <windows.h>
 #include <stdlib.h>
-#include <MMsystem.h>
 
 char square[10] = {'0','1','2','3','4','5','6','7','8','9'};
 int checkWin();
 void drawBoard();
 
 int main(){
+	system("color 1a");
 	int player = 1,i,choice;
 	char mark; // X,0
 	do {
@@ -49,7 +49,7 @@ int main(){
 drawBoard();
 if(i==1){
 	printf("==> Player %d won", --player);
-    PlaySound(TEXT("C:\\Users\\Anshika Kumari\\Downloads\\Lottery-winning-sound-effect\\Lottery-winning-sound-effect.mp3"),NULL,SND_SYNC);
+   
 }
 else{
 	printf("==>Game draw");
